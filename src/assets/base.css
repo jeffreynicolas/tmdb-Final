@@ -1,0 +1,28 @@
+/* Paleta de cores */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-black: #181818;
+  --vt-c-indigo: #2c3e50;
+  --color-background: var(--vt-c-white);
+  --color-text: var(--vt-c-indigo);
+  --section-gap: 160px;
+}
+
+/* Estilos para o modo escuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-text: rgba(235, 235, 235, 0.64);
+  }
+}
+
+/* Estilos de bordas */
+.border {
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+}
+
+/* Estilos de transição */
+.transition {
+  transition: all 0.3s ease;
+}

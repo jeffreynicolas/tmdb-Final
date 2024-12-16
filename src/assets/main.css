@@ -1,0 +1,58 @@
+/* Reset básico */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Estilos do corpo */
+body {
+  min-height: 100vh;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px; /* Considere usar rem para responsividade */
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Estilos de links */
+a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--vt-c-indigo); /* Cor ao passar o mouse */
+}
+
+/* Estilos de cabeçalho */
+h1, h2, h3 {
+  margin-bottom: 1rem; /* Espaçamento entre cabeçalhos */
+}
+
+/* Estilos de botões */
+button {
+  background-color: var(--vt-c-indigo);
+  color: var(--color-background);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: rgba(60, 60, 60, 0.8);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Ajuste o tamanho da fonte em telas menores */
+  }
+}
